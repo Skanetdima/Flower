@@ -1,8 +1,14 @@
-let msg = document.querySelectorAll(".msgForU h2");
+let msgAnim = document.querySelector(".msgForU_h2");
+function mainAnimation(){
+    msgAnim.classList.add("anim");
+}
 onload = () => {
     const c = setTimeout(() => {
       document.body.classList.remove("not-loaded");
       clearTimeout(c);
+
     }, 1000);
-    msg.classList.add("active");
-  };
+    mainAnimation();
+};
+
+
